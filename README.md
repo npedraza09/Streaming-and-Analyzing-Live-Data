@@ -1,1 +1,6 @@
-# Streaming-and-Analyzing-Live-Data
+### Tools:
+* Python
+* JSON
+* ThingsBoard
+* Firebase
+* Libraries: Paho.mqtt
