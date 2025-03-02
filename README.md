@@ -26,6 +26,7 @@ if (metadata.prevAlarmDetails) {
 return details;
 ```
 Add a "create alarm" node and name it "CreateAlarm". Modify the script to be the same as "ClearAlarm". Connect "ClearAlarm" and "CreateAlarm" to "TempThreshold", add “False” as the link label between "CreateAlarm" to "TempThreshold" and "True" as the link label between "ClearAlarm" to "TempThreshold"
+
 11. Create another rule chain and name it "TempToFirebase". Add a "rest API call" node and name it "TempToFirebase". Replace the default link with your Firebase database "temperature" field link
 12. Create another rule chain and name it "AlarmToFirebase". Add a "rest API call" node and name it "AlarmToFirebase". Replace the default link with your Firebase database "alarm" field link
 13. Add and connect your "TempToFirebase" and "AlarmToFirebase" rule chains to the "CreateAndClearAlarms" rule chain
